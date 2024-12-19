@@ -1,0 +1,36 @@
+.neon-text {
+    text-shadow: 0 0 10px #ff00d9, 0 0 20px #9916a5, 0 0 30px #557af464;
+  }
+  .titulos{
+    @apply  text-white text-5xl uppercase;
+  }
+
+ 
+  .marco:hover{
+    box-shadow: 15px 5px 10px #f61fc744;
+  }
+
+  .contenedor{
+    border-radius: 9999px;
+    padding: 4rem /* 64px */;
+    background-color: black;
+    border: 1px solid black;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+
+  }
+  .contenedor:hover{
+    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+  }
+  
+  @keyframes slide-fwd-center {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translateZ(160px);
+    }
+  }
