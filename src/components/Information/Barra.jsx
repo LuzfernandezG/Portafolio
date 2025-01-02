@@ -4,7 +4,7 @@ import './Encabezado.css'
 
 function Barra () {
   return (
-    <header className='fixed w-full px-20 opacity-80'>
+    <header className='fixed w-full px-20 opacity-80 py-4'>
       <nav className='flex gap-4 text-white w-full justify-end' >
         <li className='list-none'>
           <a className='enlaces'>HOME</a>

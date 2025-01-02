@@ -1,3 +1,8 @@
+.contenedor-principal{
+  @apply w-full h-screen flex  items-center justify-center;
+}
+
+
 .neon-text {
   text-shadow: 0 0 10px #ff00d9, 0 0 20px #9916a5, 0 0 30px #557af464;
 }
@@ -44,4 +49,7 @@
 
 .boton{
   @apply bg-purple-400 px-6 py-4 rounded-full text-white font-bold neon-text transition-colors hover:bg-purple-200 hover:text-black ;
+}
+.icono{
+  @apply bg-white rounded-full p-5 text-purple-700 hover:bg-black hover:text-white;
 }
