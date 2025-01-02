@@ -1,3 +1,5 @@
+//Linea de porcentaje
+
 import React from 'react'
 
 function LineaPorcentaje ({ porcentaje, habilidad,icono }) {

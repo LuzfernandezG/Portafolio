@@ -11,10 +11,14 @@ function App() {
       <Background />
 
       {/* Contenido principal */}
-      <div className="z-10 text-center p-8 ">
+      <div className="z-10 text-center ">
         <Barra/>
         <Information />
+        {/* <footer className="fixed bg-white">
+          <p>Luz Angela Fernandez - C° 2025</p>
+        </footer> */}
       </div>
+      
     </div>
   );
 }
