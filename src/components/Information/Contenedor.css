@@ -4,6 +4,12 @@
     height: 280px;
     margin: 20px;
 }
+@media (max-width: 390px) {
+    .card {
+        width: 350px;
+        height: 200px;
+    }
+}
 
 .card .face {
     position: absolute;

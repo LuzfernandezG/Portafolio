@@ -7,7 +7,7 @@ function Contenedores({titulo,descripcion,icono}) {
     <div className={"contenedor"}>
         {icono}
         <h1 className='text-2xl neon-text'>{titulo}</h1>
-        <p className='text-justify' >{descripcion}</p>
+        <p className='text-justify text-black hover:text-white ' >{descripcion}</p>
     </div>
   )
 }

@@ -9,9 +9,9 @@ function Card({ titulo, descripcion ,url,ruta}) {
           <img src={url} alt=""/>
           <h3>{titulo}</h3>
         </div>
-        <div className="face back">
-          <h3>{titulo}</h3>
-          <p>{descripcion}</p>
+        <div className="face back ">
+          <h4 className='md:text-3xl'>{titulo}</h4>
+          <p className='text-xs md:text-base'>{descripcion}</p>
           <div className="link transition-colors hover:text-red-600">
             <a href={ruta}>Conocer Mas </a>
           </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect,useState } from 'react'
 import './Encabezado.css'
 import * as Scroll from 'react-scroll'
 import Contenedor from './Contenedores.jsx'
@@ -6,21 +6,34 @@ import Card from './Card.jsx'
 import pdf from '../../../public/documents/cv luz.pdf'
 import Skills from './Skills.jsx'
 import { Computador, Persona, Copyrigth } from './iconos.jsx'
+import Barra from './Barra.jsx'
 
 function Encabezado () {
-  const handleScroll = () => {
-    Scroll.scroller.scrollTo('Introduccion', {
-      duration: 1000,
-      delay: 500,
-      smooth: true
-    })
+  const handleScroll2 = (numero) => {
+    console.log(numero)
+    if(numero==1){
+      Scroll.scroller.scrollTo('Introduccion', {
+        duration: 1000,
+        delay: 500,
+        smooth: true
+      })
+
+    }
+    else if (numero==2){
+      Scroll.scroller.scrollTo('Introduccion', {
+        duration: 1000,
+        delay: 500,
+        smooth: true
+      })
+    
+    }
+ 
   }
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     fetch(pdf).then(response => {
       response.blob().then(blob => {
         const fileURL = window.URL.createObjectURL(blob)
-
         // Setting various property values
         let alink = document.createElement('a')
         alink.href = fileURL
@@ -30,10 +43,56 @@ function Encabezado () {
     })
   }
 
+  const [color, setColor] = useState('initial');
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setScrollPosition(scrollPosition);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const homeHeight = document.getElementById('Home').offsetHeight;
+    if (scrollPosition > homeHeight) {
+      setColor('scroll');
+    } else {
+      setColor('initial');
+    }
+  }, [scrollPosition]);
+
   return (
     <>
+
+    {/* <Barra/> */}
+
+    <header className={`w-full md:fixed xl:px-20 opacity-80 md:py-10 transition-colors ${color}`}>
+      <nav className='md:flex gap-2 text-white w-full  md:justify-end md:gap-4 '>
+        <li className='list-none'>
+          <a className={`enlaces ${color}`}  onClick={handleScroll2(1)}>HOME</a>
+        </li>
+        <li  className='list-none'>
+          <a className={`enlaces ${color}`} onClick={handleScroll2(2)} >ABOUT ME</a>
+        </li>
+        <li  className='list-none'>
+          <a className={`enlaces ${color}`} onClick={handleScroll2(3)} >APPROACH</a>
+        </li>
+        <li  className='list-none'>
+          <a className={`enlaces ${color}`} onClick={handleScroll2(4)} >SKILLS</a>
+        </li>
+        <li  className='list-none'>
+          <a className={`enlaces ${color}`} onClick={handleScroll2(5)} >PROYECTS</a>
+        </li>
+      </nav>
+    </header>
+
       <div className='contenedor-principal flex-col' id='Home'>
-        <div className=' flex  items-center justify-center flex-col gap-3 z-30'>
+        <div className=' flex  items-center justify-center flex-col gap-3 z-30 w-1/4 md:w-full '>
           <Computador ancho='12em' alto='12em' />
           <h1 className='titulos neon-text font-bold'>
             Luz Angela Fernandez Gutierrez
@@ -48,7 +107,7 @@ function Encabezado () {
             height='6em'
             viewBox='0 0 24 24'
             className='text-white transition-colors hover:text-black'
-            onClick={handleScroll}
+            onClick={handleScroll2(2)}
           >
             <path
               fill='currentColor'
@@ -58,9 +117,9 @@ function Encabezado () {
         </div>
       </div>
 
-      <div className='contenedor-principal px-20  text-white' id='Introduccion'>
+      <div className='contenedor-principal   text-white' id='Introduccion'>
         <Persona ancho='300' alto='300' />
-        <div className='flex flex-col items-center justify-center px-36 gap-10'>
+        <div className='flex flex-col items-center justify-center px-36 gap-10 md:w-full  '>
           <h1 className='titulos neon-text'>HELLO EVERYONE</h1>
           <p className='text-justify '>
             Soy estudiante de Tecnologia en sistemas de informacion y desarrollo
@@ -75,10 +134,10 @@ function Encabezado () {
       </div>
 
       <div
-        className='w-full h-screen items-center justify-center px-7  text-white '
+        className=' w-full items-center justify-center p-7  text-white flex  flex-col gap-11 p-10 '
         id='Enfoques'
       >
-        <section className='flex flex-col gap-6 items-center justify-center'>
+        <section className='flex flex-col gap-6 items-center justify-center w-1/2 md:w-3/4 xl:w-full mx-auto '>
           <h1 className='titulos neon-text'>APPROACH</h1>
           <p className='text-justify'>
             Me especializo en diseñar y desarrollar aplicaciones y sitios web
@@ -87,7 +146,7 @@ function Encabezado () {
           </p>
         </section>
 
-        <div className='flex gap-7 p-10'>
+        <div className='grid  md:grid-cols-2 xl:grid-cols-4 gap-5 p-32 md:p-0'>
           <Contenedor
             titulo='Frontend Developer'
             descripcion=' Uso de Tecnologias como HTML5, CSS3, JavaScript y frameworks como React, Vue y NextJS, para la experiencia de usuario y diseño responsivo y accesible'
@@ -108,11 +167,14 @@ function Encabezado () {
       </div>
 
       <div
-        className='w-full h-full flex gap-12 text-white  justify-center px-7'
+        className='w-full h-full flex flex-col md:flex-row gap-12 text-white  justify-center px-7'
         id='Habilidades'
       >
+        <div className='w-full flex items-center justify-center'>
         <Skills />
-        <section className='flex flex-col gap-3 items-center justify-center'>
+          </div>
+       
+        <section className='flex flex-col gap-3 items-center justify-center w-full'>
           <h1 className='titulos neon-text'>SOFT SKILLS</h1>
           <ul className=' grid grid-cols-1 mx-auto gap-5'>
             <li className='icono'>Responsabilidad</li>
@@ -124,12 +186,12 @@ function Encabezado () {
         </section>
       </div>
       <div
-        className='w-full h-full text-white flex flex-row items-center justify-center px-7 py-16'
+        className='w-full  text-white flex flex-row items-center justify-center px-7 py-16 mx-auto'
         id='Proyectos'
       >
-        <section className='flex flex-col '>
-          <h1 className='titulos neon-text'>Recent Proyects</h1>
-          <div className='grid grid-cols-2 gap-4'>
+        <section className='flex flex-col'>
+          <h1 className='titulos neon-text w-2/4 mx-auto md:w-auto'>Recent Proyects</h1>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-4 p-5'>
             <Card
               titulo='Minimarket- Gestor de ventas'
               descripcion='Proyecto de una tienda online tipo Minimarket, permite realizar venta de productos, 

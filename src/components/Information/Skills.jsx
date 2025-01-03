@@ -2,7 +2,7 @@ import React from 'react'
 import LineaPorcentaje from './LineaPorcentaje'
 function Skills() {
   return (
-    <section className='flex flex-col gap-3 items-center justify-center'>
+    <section className='flex flex-col gap-3 items-center justify-center w-1/2 md:w-auto'>
     <h1 className='titulos neon-text'>TECHNICAL SKILLS</h1>
 
     <LineaPorcentaje

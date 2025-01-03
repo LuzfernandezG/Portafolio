@@ -15,16 +15,7 @@
 }
 
 .contenedor {
-  border-radius: 9999px;
-  padding: 4rem ;
-  background-color: black;
-  border: 1px solid black;
-  opacity: 0.7;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 50%;
-  height: 450px;
+ @apply rounded-full p-14 pt-16 bg-white border-4 border-pink-700  flex flex-col gap-2 w-full h-full transition-colors hover:bg-pink-700 hover:text-white;
 }
 .contenedor:hover {
   animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -52,4 +43,13 @@
 }
 .icono{
   @apply bg-white rounded-full p-5 text-purple-700 hover:bg-black hover:text-white;
+}
+
+.initial {
+  background-color: transparent; 
+}
+
+.scroll {
+  background-color: rgb(255, 255, 255);
+  color:black; 
 }

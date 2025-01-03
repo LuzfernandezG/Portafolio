@@ -1,11 +1,10 @@
 import React from 'react'
 import './Encabezado.css'
 
-
 function Barra () {
   return (
-    <header className='fixed w-full px-20 opacity-80 py-4'>
-      <nav className='flex gap-4 text-white w-full justify-end' >
+    <header className=' w-full md:fixed  xl:px-20 opacity-80 md:py-10  '>
+      <nav className='md:flex gap-2 text-white w-full  md:justify-end md:gap-4 '>
         <li className='list-none'>
           <a className='enlaces'>HOME</a>
         </li>
