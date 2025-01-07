@@ -1,7 +1,7 @@
 import React from "react";
 import Background from "./components/Background";
 import Information from "./components/Information/Encabezado";
-import Barra from "./components/Information/Barra";
+
 import "./App.css";
 
 function App() {

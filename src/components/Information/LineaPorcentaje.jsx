@@ -10,7 +10,7 @@ function LineaPorcentaje ({ porcentaje, habilidad,icono }) {
         {icono}
         <h2>{habilidad}</h2>
         </section>
-        <svg width='100%' height='10'>
+        <svg width='100%' height='10' className='text-white'>
           <rect
             x='0'
             y='0'

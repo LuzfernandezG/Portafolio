@@ -182,6 +182,7 @@ function Skills() {
           width='20'
           height='20'
           viewBox='0 0 16 16'
+          className='text-white'
         >
           <g
             fill='none'
