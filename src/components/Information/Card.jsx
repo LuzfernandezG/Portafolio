@@ -12,8 +12,8 @@ function Card({ titulo, descripcion ,url,ruta}) {
         <div className="face back ">
           <h4 className='md:text-3xl'>{titulo}</h4>
           <p className='text-xs md:text-base'>{descripcion}</p>
-          <div className="link transition-colors hover:text-red-600">
-            <a href={ruta}>Conocer Mas </a>
+          <div className="link ">
+            <a href={ruta} className='boton ' >Learn more</a>
           </div>
         </div>
       </div>

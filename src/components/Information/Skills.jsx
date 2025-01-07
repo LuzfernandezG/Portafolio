@@ -2,11 +2,11 @@ import React from 'react'
 import LineaPorcentaje from './LineaPorcentaje'
 function Skills() {
   return (
-    <section className='flex flex-col gap-3 items-center justify-center w-1/2 md:w-auto'>
+    <section className='flex flex-col gap-3 items-center justify-center w-1/2 md:w-full '>
     <h1 className='titulos neon-text'>TECHNICAL SKILLS</h1>
 
     <LineaPorcentaje
-      porcentaje={20}
+      porcentaje={90}
       habilidad={'HTML'}
       icono={
         <svg
@@ -34,7 +34,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={20}
+      porcentaje={95}
       habilidad={'CSS'}
       icono={
         <svg
@@ -57,7 +57,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={90}
+      porcentaje={85}
       habilidad={'Java Script'}
       icono={
         <svg
@@ -80,7 +80,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={20}
+      porcentaje={90}
       habilidad={'Tailwind'}
       icono={
         <svg
@@ -100,7 +100,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={20}
+      porcentaje={50}
       habilidad={'SASS'}
       icono={
         <svg
@@ -117,7 +117,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={20}
+      porcentaje={85}
       habilidad={'React'}
       icono={
         <svg
@@ -138,7 +138,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={50}
+      porcentaje={60}
       habilidad={'Node JS'}
       icono={
         <svg
@@ -157,7 +157,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={50}
+      porcentaje={70}
       habilidad={'Next JS'}
       icono={
         <svg
@@ -174,7 +174,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={80}
+      porcentaje={85}
       habilidad={'Vue'}
       icono={
         <svg
@@ -197,7 +197,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={15}
+      porcentaje={60}
       habilidad={'Python'}
       icono={
         <svg
@@ -221,7 +221,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={15}
+      porcentaje={70}
       habilidad={'Django'}
       icono={
         <svg
@@ -244,7 +244,7 @@ function Skills() {
       }
     />
     <LineaPorcentaje
-      porcentaje={90}
+      porcentaje={75}
       habilidad={'SQL'}
       icono={
         <svg

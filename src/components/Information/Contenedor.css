@@ -60,11 +60,9 @@
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
+    padding: 5px;
 }
 
-.card .back .link a {
-    color: #f3f3f3;
-}
 
 .card .back h3 {
     font-size: 30px;
@@ -83,3 +81,8 @@
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+/* .boton{
+    background-color: purple;
+    color: white;
+    border-radius: 15%;
+} */

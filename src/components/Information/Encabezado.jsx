@@ -70,33 +70,35 @@ function Encabezado () {
 
     {/* <Barra/> */}
 
-    <header className={`w-full md:fixed xl:px-20 opacity-80 md:py-8 transition-colors ${color}  animacion_inicial`}>
+    <header className={`w-full md:fixed xl:px-20 opacity-70 md:py-8 transition-colors  ${color}  animacion_inicial`}>
       <nav className='md:flex gap-2 text-white w-full  md:justify-end md:gap-4 p-0 '>
         <li className='list-none'>
-          <a className={`enlaces ${color}`}  onClick={()=>handleScroll2(1)} >HOME</a>
+          <a className={`enlaces `}  onClick={()=>handleScroll2(1)} >HOME</a>
         </li>
         <li  className='list-none'>
-          <a className={`enlaces ${color}`} onClick={()=>handleScroll2(2)} >ABOUT ME</a>
+          <a className={`enlaces `} onClick={()=>handleScroll2(2)} >ABOUT ME</a>
         </li>
         <li  className='list-none'>
-          <a className={`enlaces ${color}`} onClick={()=>handleScroll2(3)} >APPROACH</a>
+          <a className={`enlaces `} onClick={()=>handleScroll2(3)} >APPROACH</a>
         </li>
         <li  className='list-none'>
-          <a className={`enlaces ${color}`} onClick={()=>handleScroll2(4)} >SKILLS</a>
+          <a className={`enlaces `} onClick={()=>handleScroll2(4)} >SKILLS</a>
         </li>
         <li  className='list-none'>
-          <a className={`enlaces ${color}`} onClick={()=>handleScroll2(5)} >PROYECTS</a>
+          <a className={`enlaces `} onClick={()=>handleScroll2(5)} >PROYECTS</a>
         </li>
       </nav>
     </header>
 
       <div className='contenedor-principal flex-col' id='Home'>
         <div className=' flex  items-center justify-center flex-col gap-3 z-30 w-1/4 md:w-full '>
-          <Computador ancho='12em' alto='12em' />
+          {/* <Computador ancho='12em' alto='12em' /> */}
+          {/* <img src='icono2.png' width="15%" className='giro'/> */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="170" height="170" viewBox="0 0 2048 2048" className='giro text-purple-600'><rect width="2048" height="2048" fill="none"/><path fill="currentColor" d="M2048 1039q0 47-21 88t-57 75t-81 63t-92 51t-94 40t-82 28q15 63 24 126t9 127q0 53-9 109t-34 101t-67 75t-108 29q-55 0-112-21t-111-55t-102-72t-87-75q-38 36-86 75t-103 72t-111 54t-112 22q-65 0-107-29t-67-74t-34-102t-10-109q0-64 9-127t24-126q-37-11-82-28t-93-39t-93-51t-80-63t-57-76t-22-88q0-47 21-88t57-75t81-63t92-51t94-40t82-28q-15-63-24-126t-9-127q0-53 9-109t34-101t67-75t108-29q55 0 112 21t111 55t102 72t87 76q38-36 86-75t103-73t111-54t112-22q65 0 107 29t67 74t34 102t10 109q0 64-9 127t-24 126q36 11 82 28t93 39t93 51t80 63t57 76t22 88m-612-816q-43 0-91 20t-94 49t-88 64t-71 62q47 49 88 101t81 107q69 6 136 17t133 27q13-56 21-113t8-114q0-30-4-68t-16-72t-37-57t-66-23m-834 930q-17 41-31 81t-28 83q43 11 86 18t87 13q-31-48-59-96t-55-99m-59-392q13 42 27 83t32 82q26-51 55-99t59-97q-44 6-87 13t-86 18m109 278q80 166 186 322q47 4 93 5t93 2q47 0 93-1t93-6q106-156 186-322q-42-85-87-164t-99-158q-47-3-93-5t-93-2t-93 2t-93 5q-53 78-98 157t-88 165m680 309q44-5 87-12t86-19q-13-42-27-82t-32-82q-26 51-54 99t-60 96m114-422q17-41 31-82t28-83q-43-10-86-17t-87-14q30 48 59 96t55 100m-311-309q-26-35-53-67t-58-65q-30 32-57 64t-54 68q55-3 111-3q55 0 111 3M489 443q0 57 8 114t21 113q66-16 133-27t136-17q39-55 80-107t89-101q-30-28-71-62t-87-63t-95-50t-91-20q-41 0-65 23t-37 56t-17 72t-4 69m-38 849q20-65 44-128t52-125q-28-62-52-125t-44-128q-24 7-59 19t-74 30t-79 40t-71 48t-52 55t-20 61q0 32 19 61t51 55t71 48t79 39t75 30t60 20m161 563q43 0 91-20t94-49t88-63t71-62q-47-49-88-101t-81-108q-68-6-135-17t-134-26q-13 56-21 112t-8 114q0 31 3 69t17 72t37 56t66 23m301-393q52 69 111 132q58-63 111-132q-56 3-111 3q-57 0-111-3m646 173q0-57-8-113t-21-113q-67 15-134 26t-135 17q-39 55-80 107t-89 102q30 28 71 61t87 63t95 50t91 20q41 0 65-22t37-56t17-72t4-70m38-343q24-7 59-19t75-30t79-40t71-48t51-55t20-61q0-32-20-61t-51-55t-71-48t-79-39t-75-30t-59-20q-20 65-44 128t-52 125q28 62 52 125t44 128m-573-62q-39 0-74-15t-60-41t-41-61t-15-74q0-39 15-74t40-60t61-41t74-15q39 0 74 15t60 40t41 61t15 74q0 39-15 74t-40 61t-61 41t-74 15"/></svg>
           <h1 className='titulos neon-text font-bold  animacion_inicial'>
             Luz Angela Fernandez Gutierrez
           </h1>
-          <p className='text-white text-3xl neon-text '>Software Developer JR</p>
+          <p className='text-white text-3xl neon-text texto'>Software Developer JR</p>
           <p className='text-white text-xl neon-text  animacion_inicial'>
             Programmer in process, Always learning new technologies
           </p>
@@ -122,17 +124,18 @@ function Encabezado () {
         <div className='flex flex-col items-center justify-center mx-auto px-36 gap-10 md:w-auto '>
           <h1 className='titulos neon-text'>HELLO EVERYONE</h1>
           <p className='text-justify '>
-            Soy estudiante de Tecnologia en sistemas de informacion y desarrollo
-            de software de Cali-Coombia, he desarrolladso dia a dia
-            conocimientos en desarrollo web de manera autodidacta, me gusta
-            facilitar la experiencia del usuario medienta interfaces atractivas.
+          As a student of Information Technology in Systems and Software Development in Cali, Colombia, 
+          I have been autonomously developing my skills in web development. My passion lies in crafting 
+          intuitive and engaging interfaces that enhance user experience and foster seamless interactions 
+          with technology.
           </p>
-          <button className='boton animacion_boton ' onClick={onButtonClick}>
-            Conocer Mas
+          <button className='boton ' onClick={onButtonClick}>
+          MORE INFORMATION
           </button>
         </div>
         <div className='w-full flex items-center justify-center'>
-        <Persona ancho='300' alto='300' />
+        {/* <Persona ancho='300' alto='300' /> */}
+        <img  src='icono.png' width="50%"/>
 
         </div>
        
@@ -145,53 +148,52 @@ function Encabezado () {
         <section className='flex flex-col gap-6 items-center justify-center w-1/2 md:w-3/4 xl:w-full mx-auto '>
           <h1 className='titulos neon-text'>APPROACH</h1>
           <p className='text-justify '>
-            Me especializo en diseñar y desarrollar aplicaciones y sitios web
-            atractivos, funcionales y que sean escalables, buscando siempre
-            facilitar la experiencia del usuario en las plataformas digitales.
+            I focus on the following areas:
           </p>
         </section>
 
-        <div className='grid  md:grid-cols-2 xl:grid-cols-4 gap-5 p-32 md:p-0 mt-20'>
+        <div className='grid  md:grid-cols-2 xl:grid-cols-4 gap-5 p-32 md:p-0 '>
           <Contenedor
             titulo='Frontend Developer'
-            descripcion=' Uso de Tecnologias como HTML5, CSS3, JavaScript y frameworks como React, Vue y NextJS, para la experiencia de usuario y diseño responsivo y accesible'
+            descripcion='I leverage technologies like HTML5, CSS3, and JavaScript, along with frameworks such as React, Vue, and NextJS, to craft exceptional user experiences, with responsive and accessible designs. '
             icono={<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" className=' alineacion_iconos '><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M8 7.282L19.556 4v12.718L8 20zm0 18.393l11.556-3.282v12.718L8 38.393zm16.889-4.599l11.555-2.854v22.924L24.89 44z"/></svg>}
           />
           <Contenedor
             titulo='Backend Developer'
-            descripcion='Uso basico de tecnologias como Node.js y Django para la construccion de backend'
+            descripcion='Basic use of technologies like Node.js and Django for backend development.'
 
             icono={<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" className=' alineacion_iconos '><path fill="currentColor" d="M8.502 5.387A.75.75 0 0 0 7.5 4.272L5.76 5.836c-.736.663-1.347 1.212-1.766 1.71c-.441.525-.755 1.088-.755 1.784c0 .695.314 1.258.755 1.782c.42.499 1.03 1.049 1.766 1.711l1.74 1.564a.75.75 0 1 0 1.003-1.115l-1.696-1.527c-.788-.709-1.32-1.19-1.663-1.598c-.33-.393-.403-.622-.403-.817c0-.196.072-.425.403-.818c.344-.409.875-.889 1.663-1.598zm6.941 5.111a.75.75 0 0 1 1.06-.055l1.737 1.563c.736.663 1.347 1.213 1.766 1.711c.441.524.755 1.088.755 1.783s-.314 1.259-.755 1.783c-.42.498-1.03 1.048-1.766 1.71l-1.738 1.565a.75.75 0 1 1-1.003-1.116l1.696-1.526c.788-.71 1.32-1.19 1.663-1.599c.33-.392.403-.622.403-.817s-.072-.425-.403-.817c-.344-.41-.875-.89-1.663-1.599L15.5 11.557a.75.75 0 0 1-.056-1.059"/><path fill="currentColor" d="M14.18 4.275a.75.75 0 0 1 .532.918l-3.987 15a.75.75 0 0 1-1.45-.386l3.987-15a.75.75 0 0 1 .918-.532" opacity="0.5"/></svg>}
           />
           <Contenedor
             titulo='Data Analyst'
-            descripcion='Implementacion de bases de datos relaciones como MySQL y no relacionales coo Firebase, uso de Pandas en Django, ademas de plataformas de visualizacion interactivas como Power BI'
+            descripcion='Implementation of relational (MySQL) and NoSQL (Firebase) databases, with Pandas integration in Django and interactive data visualization using Power BI.'
             icono={<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" className='alineacion_iconos'><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M7 10.842c.602.18 1.274.33 2 .44M20 12c0 1.657-3.582 3-8 3s-8-1.343-8-3m3 5.842c.602.18 1.274.33 2 .44"/><path d="M20 5v14c0 1.657-3.582 3-8 3s-8-1.343-8-3V5"/></g></svg>} 
          />
           <Contenedor
             titulo='support TI'
-            descripcion='En el area de soporte, aseguro que los sistemas estén operativos y que los usuarios puedan trabajar sin interrupciones, estando a la disposicion de brindar soluciones efectivas'
+            descripcion='In the support area, I ensure that systems are operational and users can work uninterrupted, providing effective solutions as needed.'
             icono={<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" className='alineacion_iconos'><path fill="currentColor" d="M12.942 18H11.5q-3.132 0-5.316-2.183T4 10.504t2.183-5.317T11.498 3q1.566 0 2.93.586q1.364.585 2.383 1.604t1.604 2.379T19 10.5q0 2.658-1.33 4.985t-3.436 3.913q-.211.116-.413.133t-.402-.089t-.321-.276t-.127-.408zm-1.406-2.429q.306 0 .52-.216t.213-.523t-.216-.52t-.523-.214t-.52.216t-.214.523t.217.52t.523.214M9.459 8.202q.174.067.347-.009t.283-.245q.205-.339.582-.54q.377-.2.868-.2q.736 0 1.197.385t.46 1.041q0 .406-.197.76t-.672.829q-.644.627-.925 1.076t-.28.872q0 .197.128.336t.31.14t.305-.14q.123-.138.146-.342q.049-.31.335-.688q.287-.379.696-.789q.564-.563.807-1.062t.243-.999q0-1.029-.71-1.655t-1.805-.626q-.736 0-1.356.359q-.621.358-.932.856q-.11.202-.065.388t.235.253"/></svg>}
           />
         </div>
       </div>
 
       <div
-        className='w-full h-screen flex flex-col md:flex-row gap-12 text-white  justify-center px-7'
+        className='w-full   grid grid-flow-col-dense h-full md:flex-row gap-12 text-white  justify-center px-7'
         id='Habilidades'
       >
-        <div className='w-full flex items-center justify-center'>
+        <div className='w-full flex items-center justify-center mx-auto p-5'>
         <Skills />
           </div>
        
         <section className='flex flex-col gap-3 items-center justify-center w-full'>
           <h1 className='titulos neon-text'>SOFT SKILLS</h1>
           <ul className=' grid grid-cols-1 mx-auto gap-5'>
-            <li className='icono'>Responsabilidad</li>
-            <li className='icono'>Trabajo en equipo</li>
-            <li className='icono'>Adaptabilidad</li>
-            <li className='icono'>Creatividad</li>
-            <li className='icono'>Autodidacta</li>
+            <li className='boton'>Responsibility</li>
+            <li className='boton'>Adaptability</li>
+            <li className='boton'>Creativity</li>
+            <li className='boton'>Self-taught</li>
+            <li className='boton'>Teamwork</li>
+            <li className='boton'>Critical thinking</li>
           </ul>
         </section>
       </div>
@@ -201,36 +203,34 @@ function Encabezado () {
       >
         <section className='flex flex-col'>
           <h1 className='titulos neon-text w-2/4 mx-auto md:w-auto'>Recent Proyects</h1>
-          <div className='grid grid-cols-1 xl:grid-cols-3 gap-4 p-5'>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-4'>
             <Card
               titulo='Minimarket- Gestor de ventas'
-              descripcion='Proyecto de una tienda online tipo Minimarket, permite realizar venta de productos, 
-            llevar visualizacion y control de la ventas, sus modalidades y analisis graficos- Django + Vue'
+              descripcion='Project for a minimarket-type store, enabling product sales, visualization and control of sales, modalities, and graphical analysis - Built with Django + Vue'
               url='mercado.jpeg'
               ruta='https://github.com/LuzfernandezG/Tienda-Python'
             />
             <Card
               titulo='Mi portafolio- Luz Angela Fernandez'
-              descripcion='Proyecto realizado en React + Tailwing'
+              descripcion='Project developed with React + Tailwind'
               url='portafolio.jpeg'
               ruta='#'
             />
             <Card
               titulo='Restaurante-Asados del oeste'
-              descripcion='Pagina web de restaurante de comidas al carbon, con plataforma para gestion de reserva de mesas-Vue'
+              descripcion='Restaurant website for charcoal-grilled food, featuring a table reservation management platform built with Vue.'
               url='restaurante.jpeg'
               ruta='https://github.com/LuzfernandezG/Restaurante'
             />
             <Card
               titulo='Festival de musica'
-              descripcion='Maquetacion de pagina de venta de boletos para festivales, implementacion de SASS para manejo de estilos'
+              descripcion='Design and layout of a festival ticket sales page, implementing SASS for efficient style management.'
               url='festival.jpeg'
               ruta='https://github.com/LuzfernandezG/Festival-de-Musica-en-SASS'
             />
             <Card
               titulo='Blog- La Pluma Digital'
-              descripcion='plataforma para compartir publicaciones entre la comunidad, permite la visualizacion de usuarios existentes, ranking de
-            las mejores publicaciones y uso requerido de usuario (Log in)'
+              descripcion='A community sharing platform that enables users to share posts, view existing users, rank top posts, and requires user authentication (Log in) for access.'
               url='blog.jpeg'
               ruta='https://github.com/LuzfernandezG/La-Pluma-Digital'
             />
