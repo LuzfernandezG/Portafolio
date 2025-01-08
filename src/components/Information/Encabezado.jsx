@@ -108,7 +108,7 @@ function Encabezado () {
           <h1 className='titulos neon-text font-bold  animacion_inicial'>
             Luz Angela Fernandez Gutierrez
           </h1>
-          <p className='text-white text-3xl neon-text texto'>Software Developer JR</p>
+          <p className='text-white text-3xl neon-text texto'>Web Developer JR</p>
           <p className='text-white text-xl neon-text  animacion_inicial'>
             Programmer in process, Always learning new technologies
           </p>
@@ -248,8 +248,16 @@ function Encabezado () {
           </div>
         </section>
       </div>
-      <div>
-        <h1>CONTACT ME</h1>
+      <div className='w-full h-full flex items-center justify-center mx-auto p-10'>
+        <section className='contenedor-contacto'>
+        <h1 className='titulos neon-text '>CONTACT ME</h1>
+        <p><span>Email:</span> Fernandezluz1995@gmail.com</p>
+        <p><span>Phone:</span> +57 3153609570</p>
+        <p>Cali, Colombia</p>
+        
+
+        </section>
+
       </div>
 
       <footer className='bg-white flex justify-center items-center gap-5 p-3'>
